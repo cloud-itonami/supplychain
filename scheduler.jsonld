@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "CreativeWork",
+  "name": "etzhayyim project supplychain Scheduler",
+  "identifier": "etzhayyim-project-supplychain/scheduler",
+  "description": "Initial milestones for the supply chain visualization SpinApp.",
+  "dateCreated": "2026-03-13T00:00:00Z",
+  "milestones": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Scaffold supplychain.etzhayyim.com SpinApp",
+      "description": "Create public static UI and API surface for curated supply chain topology."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Integrate resources supply-chain catalog",
+      "description": "Reference etzhayyim-project-resources content/supply-chain as the canonical model source."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Publish richer multi-domain graphs",
+      "description": "Expand beyond cleaning robots into sector-specific supply chain maps."
+    }
+  ]
+}

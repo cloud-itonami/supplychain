@@ -1,0 +1,49 @@
+{
+  "@context": [
+    "https://schema.org/",
+    {
+      "etzhayyim": "https://etzhayyim.com/schemas/",
+      "capabilities": "etzhayyim:capabilities",
+      "survivalIndicators": "etzhayyim:survivalIndicators",
+      "scheduler": "etzhayyim:scheduler"
+    }
+  ],
+  "@type": "Project",
+  "identifier": "etzhayyim-project-supplychain",
+  "name": "etzhayyim project supplychain",
+  "status": "DesignComplete",
+  "description": "Supply chain intelligence and visualization SpinApp for curated resources graphs, starting with cleaning robot manufacturing and upstream material dependencies.",
+  "schema:url": "https://supplychain.etzhayyim.com",
+  "capabilities": {
+    "@type": "DefinedTermSet",
+    "name": "Capabilities",
+    "terms": [
+      {
+        "@type": "DefinedTerm",
+        "name": "Resource Graph Visualization",
+        "description": "Render curated resources JSON-LD as stage, company, plant, logistics, and BOM views."
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Supply Chain Dependency Mapping",
+        "description": "Expose upstream and downstream links across materials, fabrication, assembly, and distribution."
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Variant Comparison",
+        "description": "Compare BOM allocations and operational focus across consumer and commercial product variants."
+      }
+    ]
+  },
+  "survivalIndicators": [
+    {
+      "@type": "PropertyValue",
+      "identifier": "requests",
+      "name": "Requests",
+      "description": "Traffic handled by the public SpinApp.",
+      "unitText": "count",
+      "value": null
+    }
+  ],
+  "scheduler": "scheduler.jsonld"
+}
