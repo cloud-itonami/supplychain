@@ -1,5 +1,24 @@
 # etzhayyim-project-supplychain — Cleaning Robot Manufacturing Supply Chain
 
+> ## ⚠️ This describes the pre-migration system. None of the files it names exist here.
+>
+> This document was carried over verbatim when the app was extracted from
+> `etzhayyim/root` (see `migration.edn`). It describes a Python FastAPI service
+> with a LangGraph Pregel graph, in-process cron, a Helm release and RisingWave
+> tables. **This tree has no `.py`, no `.sql`, no `.yaml` and no Dockerfile** —
+> 15 tracked files, of which the working part is ~14 KB of TypeScript under
+> `kotoba/` writing AT Protocol PDS records.
+>
+> That replacement is what `MIGRATION-TODO.md` asked for: strip RisingWave /
+> Postgres, move onto AT Protocol MST + IPFS. The substrate changed; much of the
+> domain model below survived (the 0.95 risk cap, the node kinds, the dependency
+> relations). The Pregel pressure model did **not** — nothing in this repository
+> implements it.
+>
+> **Read `README.md` for what is actually here, and
+> `docs/operator-quickstart.md` for how to run it.** Read the rest of this file
+> as the design intent it records, not as a map of this repository.
+
 > **Runtime**: K8s pod-side LangServer / MCP / LangGraph Pregel. Cloudflare edge is UI and proxy only.
 
 `supplychain.etzhayyim.com` analyzes upstream material pressure and supply-chain stress across the cleaning robot manufacturing graph. It is a domain actor within the Jukyu System-of-Systems: it normalizes automotive material and robotics package tables into the shared Jukyu SoS schema and runs Pregel pressure-propagation over that domain slice.
