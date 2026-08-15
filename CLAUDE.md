@@ -6,8 +6,9 @@
 > `etzhayyim/root` (see `migration.edn`). It describes a Python FastAPI service
 > with a LangGraph Pregel graph, in-process cron, a Helm release and RisingWave
 > tables. **This tree has no `.py`, no `.sql`, no `.yaml` and no Dockerfile** —
-> 15 tracked files, of which the working part is ~14 KB of TypeScript under
-> `kotoba/` writing AT Protocol PDS records.
+> 18 tracked files, three of which are the documentation named below; the
+> working part is ~14 KB of TypeScript under `kotoba/` writing AT Protocol PDS
+> records.
 >
 > That replacement is what `MIGRATION-TODO.md` asked for: strip RisingWave /
 > Postgres, move onto AT Protocol MST + IPFS. The substrate changed; much of the
