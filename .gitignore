@@ -1,0 +1,5 @@
+node_modules/
+
+# `npm install` writes one; the tree has never carried a lockfile, so `npm ci`
+# is not available. See docs/operator-quickstart.md § 1.
+package-lock.json
