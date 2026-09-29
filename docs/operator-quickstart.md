@@ -176,7 +176,7 @@ README.md                      what is actually here
 docs/operator-quickstart.md    this file
 .gitignore                     node_modules, package-lock
 
-CLAUDE.md                      pre-migration design doc — see README
+AGENTS.md                      pre-migration design doc — see README
 MIGRATION-TODO.md              substrate-boundary checklist, unfinished
 NOTICE                         Apache-2.0
 PROJECT.jsonld                 capabilities; declares a URL that does not resolve

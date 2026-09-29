@@ -9,7 +9,7 @@ The whole repository is 18 tracked files, three of which are this
 documentation. The working part is `kotoba/`: four TypeScript modules (~14 KB)
 and one test file, built on `@etzhayyim/sdk`.
 
-**Before you read `CLAUDE.md`, read [§ What `CLAUDE.md` describes](#what-claudemd-describes-and-why-it-is-not-this-repository).**
+**Before you read `AGENTS.md`, read [§ What `AGENTS.md` describes](#what-claudemd-describes-and-why-it-is-not-this-repository).**
 It documents a different system than the one in this tree.
 
 ---
@@ -69,9 +69,9 @@ discriminate?*):
 - **Both writes are idempotent** on their derived rkey — re-registering returns
   `alreadyExists` with the existing URI rather than overwriting.
 
-## What `CLAUDE.md` describes, and why it is not this repository
+## What `AGENTS.md` describes, and why it is not this repository
 
-`CLAUDE.md` describes a Python service: a FastAPI server on port 8000, a
+`AGENTS.md` describes a Python service: a FastAPI server on port 8000, a
 LangGraph Pregel graph `supplychain_cleaning_robot_v1` with 8 supersteps and
 0.70 damping, three in-process cron tasks, a Helm release `lg-supplychain-pool`,
 a `Dockerfile.supplychain`, four `tests/test_*.py` files, and RisingWave tables
@@ -87,10 +87,10 @@ doc, carried over verbatim when the app was extracted from `etzhayyim/root`
 requires that RisingWave / Postgres / Kysely be stripped and the app moved onto
 AT Protocol MST + IPFS. **`kotoba/` is that replacement.** The substrate changed;
 the domain model largely survived — the 0.95 risk cap and the
-node/edge/relation vocabulary in `CLAUDE.md` are the same ones the TypeScript
+node/edge/relation vocabulary in `AGENTS.md` are the same ones the TypeScript
 implements.
 
-Read `CLAUDE.md` as history — it is the best available description of the
+Read `AGENTS.md` as history — it is the best available description of the
 intended *behaviour* (pressure propagation, company exposure scoring) that
 `kotoba/` does not yet implement.
 
